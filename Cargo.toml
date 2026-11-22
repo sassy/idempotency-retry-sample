@@ -1,0 +1,15 @@
+[package]
+name = "idempotency-retry-sample"
+version = "0.1.0"
+edition = "2021"
+description = "Learning/verification sample: idempotency keys + order-level unique constraint, and a retry helper with exponential backoff + jitter (axum)"
+license = "MIT"
+
+[dependencies]
+axum = "0.8"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[dev-dependencies]
+tower = { version = "0.5", features = ["util"] }
